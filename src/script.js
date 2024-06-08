@@ -8,7 +8,7 @@ chk.addEventListener('change', () => {
 });
 
 const input = document.getElementById('city');
-const baseUrl = 'https://bestweatherapp-qeur7fyra-merets-projects-69595a53.vercel.app';
+const baseUrl = 'https://bestweatherapp-nine.vercel.app';
 
 input.addEventListener('keypress', function(event) {
     if (event.key === "Enter") {
