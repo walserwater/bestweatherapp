@@ -17,16 +17,14 @@ input.addEventListener('keypress', function(event) {
 });
 
 function getWeather() {
-    
-    const apiKey = '747e9af798821adcfd2d078517f0233e';
     const city = document.getElementById('city').value;
 
     if (!city) {
         alert('Please enter a city');
-        return
+        return;
     }
 
-    const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    const currentWeatherUrl = `/api/getWeather?city=${city}`;
 
     fetch(currentWeatherUrl)
         .then(response => response.json())
@@ -36,8 +34,7 @@ function getWeather() {
         .catch(error => {
             console.error('Error fetching current weather data:', error);
             alert('Error fetching current weather data. Please try again.');
-    });
-
+        });
 }
 
 let interval = null;
