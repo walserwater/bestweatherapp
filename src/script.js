@@ -24,7 +24,7 @@ function getWeather() {
         return;
     }
 
-    const currentWeatherUrl = `/api/getWeather?city=${city}`;
+    const currentWeatherUrl = `../api/getWeather?city=${city}`;
 
     fetch(currentWeatherUrl)
         .then(response => response.json())
