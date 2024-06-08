@@ -8,6 +8,7 @@ chk.addEventListener('change', () => {
 });
 
 const input = document.getElementById('city');
+const baseUrl = 'https://bestweatherapp-qeur7fyra-merets-projects-69595a53.vercel.app';
 
 input.addEventListener('keypress', function(event) {
     if (event.key === "Enter") {
@@ -24,7 +25,7 @@ function getWeather() {
         return;
     }
 
-    const currentWeatherUrl = `../api/getWeather?city=${city}`;
+    const currentWeatherUrl = `${baseUrl}/api/getWeather?city=${city}`;
 
     fetch(currentWeatherUrl)
         .then(response => response.json())
