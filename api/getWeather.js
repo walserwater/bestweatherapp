@@ -28,7 +28,7 @@ const callWeatherApi = async (req, res) => {
         const response = await axios.get(url);
         res.status(200).json(response.data);
     } catch (error) {
-        res.status(200).json(response.data);
+        res.status(error.response.status).json(error.response.data);
     }
 };
 
