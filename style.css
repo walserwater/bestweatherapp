@@ -13,7 +13,7 @@ body.dark {
     padding-right: 50px;
 }
 
-.checkbox {
+.checkbox-mode {
     opacity: 0;
 }
 
@@ -64,7 +64,7 @@ body.dark {
     margin-top: 50px;
 }
 
-#submitbtn {
+#submit-button {
     display: none;
 }
 

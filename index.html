@@ -16,8 +16,8 @@
         Best Weather App
       </a>
       <div class="one-quarter" id="switch">
-        <input type="checkbox" class="checkbox" id="chk" />
-        <label class="label" for="chk">
+        <input type="checkbox" class="checkbox" id="checkbox-mode" />
+        <label class="label" for="checkbox-mode">
             <i class="fas fa-moon"></i>
             <i class="fas fa-sun"></i>
             <div class="ball"></div>
@@ -32,23 +32,27 @@
         </div>
         <datalist id="cities">
           <option value="Bern">Bern</option>
+          <option value="Basel">Basel</option>
+          <option value="Sydney">Sydney</option>
+          <option value="Paris">Paris</option>
+          <option value="London">London</option>
           <option value="Los Angeles">Los Angeles</option>
         </datalist>
-        <input type="submit" id="submitbtn" value="Send" onclick="getWeather()"/>
+        <input type="submit" id="submit-button" value="Send" onclick="getWeather()"/>
       </div>
         <div class="card" id="card">
             <div class="right">
-                <h2 class="city" id="city-name">Toronto</h2>
-                <p class="med-font" id="weather-info">Snow</p>
+                <h2 class="city" id="city-name"></h2>
+                <p class="med-font" id="weather-info"></p>
                 <div class="container-right">
-                  <h1 class="large-font" id="temp-div">-20</h1><h1 class="large-font" id="celsius">&#176;</h1>
+                  <h1 class="large-font" id="temp-div"></h1><h1 class="large-font" id="celsius">&#176;</h1>
                 </div>
             </div>
             <div class="left">
               <div class="container-left">
-                <p class="time-font" id="time">08:30</p><span class="sm-font" id="suffix">AM</span>
+                <p class="time-font" id="time"></p><span class="sm-font" id="suffix"></span>
               </div>
-                <p class="day-font" id="date">Wednesday, 18 October 2019</p>
+                <p class="day-font" id="date"></p>
             </div>
         </div>
     </div>
